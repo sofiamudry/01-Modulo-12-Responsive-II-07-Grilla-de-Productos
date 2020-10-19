@@ -13,6 +13,7 @@ body {
     align-items: center;
     justify-content: center;
     text-align: center;
+    font-size: 1rem;
 }
 
 .container {
@@ -23,34 +24,35 @@ body {
     justify-content: center;
     align-items: center;
     background-color: palegoldenrod;
-    font-size: 1em;
     box-shadow: 0px 5px 15px rgb(191, 184, 146);
 }
 
 .title {
-    font-size: 2.5rem;
+    font-size: 2.5em;
 }
 
 .sub-title {
-    font-size: 1.5rem;
+    font-size: 1.5em;
 }
 
 .description {
-    font-size: .9rem;
+    font-size: 1.1em;
     padding: 10px;
+    margin: 15px;
 }
 
 .product-name {
-    font-size: 1.3rem;
+    font-size: 1.5em;
 }
 
 .price {
-    font-size: 1.2rem;
+    font-size: 1.4em;
     margin: 10px;
 }
 
 .product-description {
-    font-size: .9rem;
+    font-size: .8em;
+    margin: 0px 15px;
 }
 
 .subcontainer {
@@ -84,6 +86,7 @@ img {
 
 @media (max-width:1200px) {
     .container {
+        font-size: .9em;
         width: 800px;
         height: 2800px;
     }
@@ -91,12 +94,13 @@ img {
 
 @media (max-width:800px) {
     .container {
+        font-size: 1.02em;
         width: 600px;
         height: 3600px;
     }
     .product {
         height: 350px;
-        width: 550px;
+        width: 580px;
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
@@ -105,6 +109,7 @@ img {
     }
     h3 {
         order: 1;
+        width: 210px;
     }
     .price {
         order: 2;
