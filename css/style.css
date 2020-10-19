@@ -1,0 +1,119 @@
+* {
+    /* background-color: orchid; */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    font-family: 'montserrat';
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.container {
+    height: 1700px;
+    width: 1200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: palegoldenrod;
+    font-size: 1em;
+    box-shadow: 0px 5px 15px rgb(191, 184, 146);
+}
+
+.title {
+    font-size: 2.5rem;
+}
+
+.sub-title {
+    font-size: 1.5rem;
+}
+
+.description {
+    font-size: .9rem;
+    padding: 10px;
+}
+
+.product-name {
+    font-size: 1.3rem;
+}
+
+.price {
+    font-size: 1.2rem;
+    margin: 10px;
+}
+
+.product-description {
+    font-size: .9rem;
+}
+
+.subcontainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.product {
+    width: 350px;
+    height: 500px;
+    margin: 10px;
+    border: 2px solid rgb(255, 248, 243);
+    box-shadow: 2px 2px 20px rgb(213, 205, 162);
+    background-color: rgb(227, 222, 173);
+    border-radius: 10px;
+}
+
+.product:hover {
+    border: 4px solid white;
+    background-color: rgb(244, 239, 183);
+}
+
+img {
+    height: 300px;
+    width: 300px;
+    margin: 10px;
+}
+
+@media (max-width:1200px) {
+    .container {
+        width: 800px;
+        height: 2800px;
+    }
+}
+
+@media (max-width:800px) {
+    .container {
+        width: 600px;
+        height: 3600px;
+    }
+    .product {
+        height: 350px;
+        width: 550px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+    h3 {
+        order: 1;
+    }
+    .price {
+        order: 2;
+    }
+    .product-description {
+        order: 3;
+        width: 200px;
+    }
+    .product-img {
+        order: 4;
+    }
+}
